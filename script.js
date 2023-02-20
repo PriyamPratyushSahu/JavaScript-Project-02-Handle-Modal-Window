@@ -23,14 +23,22 @@ const escapeEvent = function (e) { //e -> event
         closeModal();
     }     
 }
-document.addEventListener('keydown', escapeEvent)
+
+// Opening the modal by clicking on it
 for (let i = 0; i < btnsOpenModal.length; i++)
     //console.log(btnsOpenModal[i].textContent)
     btnsOpenModal[i].addEventListener('click',openModal)
-    
+//Closing the modal in 3 different ways:
+
+//Method 1: Clicking on cross button, to close the current modal
 btnCloseModal.addEventListener('click', closeModal)
 
+//Method 2: Clicking in the background to close the current modal
 overlay.addEventListener('click', closeModal)
+
+//Method 3: Pressing Escape key to close the current modal
+document.addEventListener('keydown', escapeEvent)
+
 
 /**
                         ******************************** VARIABLE DESCRIPTION ********************************
