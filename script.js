@@ -43,10 +43,10 @@ document.addEventListener('keydown', escapeEvent)
 /**
                         ******************************** VARIABLE DESCRIPTION ********************************
             variable                            type                        Description                       
-1.      modal                                   variable                    To hold the modal locator value
-2.      overlay                                 variable                    To hold the overlay locator value
-3.      btnCloseModal                           variable                    To hold the close button locator value
-4.      btnsOpenModal                           variable                    To hold all button locations
+1.      modal                                   locator                    To hold the modal locator value
+2.      overlay                                 locator                    To hold the overlay locator value
+3.      btnCloseModal                           locator                    To hold the close button locator value
+4.      btnsOpenModal                           locator                    To hold all button locations
 5.      openModal                               function                    To open the modal event, when clicked                   
 6.      closeModal                              function                    To close the modal event, when clicked
 7.      escapeEvent                             function                    To execute closeModal, when Escape key is pressed
